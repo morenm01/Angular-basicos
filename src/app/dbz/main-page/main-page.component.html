@@ -1,0 +1,26 @@
+<h1>Dragon Ball Z</h1>
+<hr>
+
+<div class="row">
+  <div class="col">
+    <!-- el [personajes] es para indicarle que en el componente hijo en la variable personajes queremos meterle algo
+    el segundo "personajes" es para indicarle que es la propiedad que le vamos a dar desde el padre-->
+    <!--<app-personajes [personajes]="personajes"></app-personajes>-->
+      <app-personajes></app-personajes>
+
+
+    <!--<h3>Personajes</h3>
+    <hr>
+    <ul>
+      <li *ngFor="let personaje of personajes">
+        {{personaje.nombre}} - {{personaje.poder | number}}</li>
+    </ul>-->
+  </div>
+
+  <div class="col">
+    <app-agregar [nuevo]="nuevo">
+     <!--</app-agregar> (onNuevoPersonaje)="agregarNuevoPersonaje( $event)">-->
+  </app-agregar>
+
+  </div>
+</div>
